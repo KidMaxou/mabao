@@ -1,0 +1,21 @@
+#tabConversion {
+	border: 0px solid grey;
+	border-collapse: collapse;
+	width: 85%;
+}
+
+#tabConversion td {
+	border: 1px solid grey;
+}
+
+#global {
+	display: flex;
+}
+
+#gauche {
+	float: left;
+}
+
+#droite {
+	float: right;
+}

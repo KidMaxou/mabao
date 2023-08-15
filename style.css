@@ -1,0 +1,288 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #000000;
+}
+
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+	background-color: #CEC7AF;
+	box-shadow: 2px 0px 0px #a0a0a0;
+    border-radius: 2px;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+	margin-left: 1em;
+	color: red;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #8d0e0e;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #c56b6b;
+    border-bottom: 3px solid #d17c7c;
+}
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 10px;
+    flex: 3;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 0px 0px #a0a0a0;
+    border-radius: 2px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+}
+
+aside h3
+{
+    text-align: left;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+#menu a
+{
+    text-decoration: none;
+    color: #291085;
+	font-size: 0.9em;
+}
+
+#menu a:hover
+{
+    text-decoration: underline;
+}
+
+#menu li
+{
+    list-style-type: square;
+}
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    padding-top: 15px;
+    box-shadow: 2px 2px 0px #a0a0a0;
+    border-radius: 2px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+footer ul 
+{
+	padding-left: 25px;
+}
+
+#liens
+{
+    width: 100%;
+}
+
+#listes_liens
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}
